@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="formPassos">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Datepicker -->
+        <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+
+        <!-- Estilo deste site -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+
+        <!-- Ícones -->
+        <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css">
+
+        <!-- Estilo WOW -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- jQuery -->
+		<script src="js/jquery.min.js" charset="utf-8"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js" charset="utf-8"></script>
+
+		<!-- AngularJS -->
+		<script src="js/angular.min.js" charset="utf-8"></script>
+
+		<!-- Modulo -->
+		<script src="js/app.js" charset="utf-8"></script>
+
+		<!-- Directive -->
+		<!-- senhas iguais no cadastro -->
+		<script src="js/directive/confirmSenha.js" charset="utf-8"></script>
+		<!-- mascaras -->
+		<script src="js/directive/ngMask.min.js" charset="utf-8"></script>
+
+		<!-- Controllers -->
+		<!-- cadastro -->
+		<script src="js/controller/formPassosCtrl.js" charset="utf-8"></script>
+
+		<!-- Animações WOW -->
+		<script src="js/wow.min.js" charset="utf-8"></script>
+
+		<!-- For&ccedil;a da senha -->
+		<script src="js/jquery.complexify.js" charset="utf-8"></script>
+
+		<!-- Datepicker -->
+		<script src="js/bootstrap-datepicker.min.js" charset="utf-8"></script>
+		<script src="js/locales/bootstrap-datepicker.pt-BR.min.js" charset="UTF-8"></script>
+
+		<!-- Scrolling Nav JavaScript -->
+		<script src="js/jquery.easing.min.js" charset="utf-8"></script>
+	</head>
+	<body ng-controller="formPassosCtrl">
+		<div class="container">
+			<div class="col-lg-6 col-centered">
+				<div id="cadastroTopTop" class="cadastro fade-in">
+					<div class="box-cadastro" ng-hide="passo == 5">
+				        <div class="passos">
+				            <div class="line"></div>
+				            <div class="circ-passos">
+				                <div ng-class="{active_passo: passo == 1}" class="circ-passos-item fade-in">
+				                    <span>1</span>
+				                </div>
+				                <p>Lorem ipsum</p>
+				            </div>
+				            <div class="circ-passos">
+				                <div ng-class="{active_passo: passo == 2}" class="circ-passos-item fade-in">
+				                    <span>2</span>
+				                </div>
+				                <p>Lorem ipsum</p>
+				            </div>
+				            <div class="circ-passos">
+				                <div ng-class="{active_passo: passo == 3}" class="circ-passos-item fade-in">
+				                    <span>3</span>
+				                </div>
+				                <p>Lorem ipsum</p>
+				            </div>
+				            <div class="circ-passos">
+				                <div ng-class="{active_passo: passo == 4}" class="circ-passos-item fade-in">
+				                    <span>4</span>
+				                </div>
+				                <p>Lorem ipsum</p>
+				            </div>
+				        </div>
+				        <div class="form-passos">
+				            <div ng-show="passo == 1" class="passo passo-1 fade-in">
+				                <form role="form" name="cadastro_1" novalidate>
+				                    <div class="form-group">
+				                        <span class="fnt-12 fade-in" ng-show="ir && !cadastro.plano"><strong>Necess&aacute;rio marcar</strong></span>
+				                        <span class="fnt-12 fade-in" ng-hide="ir && !cadastro.plano || cadastro.plano">Clique para marcar</span>
+				                    </div>
+				                    <div class="form-group">
+				                        <div class="col-lg-3 text-center">
+				                            <div class="planos planos-cadastro one" id="plano-mensal" ng-click="marcaPlano('plano-mensal');">
+				                                <div class="header-plano">
+				                                    <h2>Lorem<br>ipsum</h2>
+				                                    <p>Lorem ipsum</p>
+				                                </div>
+				                                <div class="preco-plano">
+				                                    <span>R$</span>
+				                                    <strong>999,00</strong>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <div class="col-lg-3 text-center">
+				                            <div class="planos planos-cadastro two" id="plano-trimestral" ng-click="marcaPlano('plano-trimestral');">
+				                                <div class="header-plano">
+				                                    <h2>Lorem<br>ipsum</h2>
+				                                    <p>Lorem ipsum</p>
+				                                </div>
+				                                <div class="preco-plano">
+				                                    <span>R$</span>
+				                                    <strong>999,00</strong>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <div class="col-lg-3 text-center">
+				                            <div class="planos planos-cadastro three" id="plano-semestral" ng-click="marcaPlano('plano-semestral');">
+				                                <div class="header-plano">
+				                                    <h2>Lorem<br>ipsum</h2>
+				                                    <p>Lorem ipsum</p>
+				                                </div>
+				                                <div class="preco-plano">
+				                                    <span>R$</span>
+				                                    <strong>999,00</strong>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <div class="col-lg-3 text-center">
+				                            <div class="planos planos-cadastro four"  id="plano-anual" ng-click="marcaPlano('plano-anual');">
+				                                <div class="header-plano header-destaque">
+				                                    <h2>Lorem<br>ipsum</h2>
+				                                    <p>Lorem ipsum</p>
+				                                </div>
+				                                <div class="preco-plano preco-destaque">
+				                                    <span>R$</span>
+				                                    <strong>999,00</strong>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <input type="hidden" id="planoInput" ng-model="cadastro.plano" ng-required="!voltar">
+				                    </div>
+				                    <div class="controls-passos text-right">
+				                        <button id="btnPassoOne" ng-click="passosCadastro(true, cadastro, 'cadastro_1');voltar=false;ir=true" class="fade-in btn btn-primary">Pr&oacute;ximo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				                    </div>
+				                </form>
+				            </div>
+				            <div ng-show="passo == 2" class="passo passo-2 fade-in">
+				                <form role="form" name="cadastro_2" novalidate>
+				                    <div class="form-group emailCampo">
+				                        <input type="email" class="form-control" ng-model="cadastro.email" placeholder="Escolha seu melhor e-mail" ng-required="!voltar">
+				                        
+				                        <i class="fa fa-exclamation-triangle" aria-hidden="true" ng-mouseover="colocarCorTooltip()" ng-show="emailInvalido" ng-hide="!emailInvalido" data-toggle="tooltip" data-placement="left" title="Deve conter @ e .com"></i>
+				                        
+				                        <div class="fnt-10 text-left emailja fade-in" ng-show="emailja" ng-hide="!emailja">E-mail j&aacute; cadastrado. Deseja <a href="#modal-login" data-toggle="modal" target="_self" data-target="#modal-login" class="green">acessar sua conta</a>?</div>
+				                    </div>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6 senha-cadastro">
+				                            <input type="password" class="form-control" name="senha" id="senha" ng-model="cadastro.senha" placeholder="Senha" ng-required="!voltar">
+				                            <ul ng-show="forca_senha" ng-class="{red: forca_senha <= 10, orange: forca_senha > 10, yellow: forca_senha > 30, green: forca_senha > 50}">
+				                                <li><i ng-show="forca_senha > 1" class="fa fa-square" aria-hidden="true"></i></li>
+				                                <li><i ng-show="forca_senha > 10" class="fa fa-square" aria-hidden="true"></i></li>
+				                                <li><i ng-show="forca_senha > 30" class="fa fa-square" aria-hidden="true"></i></li>
+				                                <li><i ng-show="forca_senha > 50" class="fa fa-square" aria-hidden="true"></i></li>
+				                            </ul>
+				                        </div>
+				                        <div class="col-lg-6 col-xs-6">
+				                            <input type="password" class="form-control" name="confirm_senha" id="confirm_senha" ng-model="cadastro.confirm_senha" placeholder="Confirme a senha" ng-required="!voltar" pw-check="senha">
+				                        </div>
+				                        <span ng-show="cadastro_2.confirm_senha.$error.pwmatch && cadastro.confirm_senha" class="aviso fade-in">senhas diferentes</span>
+				                    </div>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6 senha-cadastro text-left fade-in" ng-show="senhaFraca" ng-hide="!senhaFraca">
+				                            <div>
+				                                <span class="fnt-10 fade-in">For&ccedil;a m&iacute;nima:</span>
+				                                <ul class="orange fade-in">
+				                                    <li><i class="fa fa-square" aria-hidden="true"></i></li>
+				                                    <li><i class="fa fa-square" aria-hidden="true"></i></li>
+				                                </ul>
+				                            </div>
+				                        </div>
+				                    </div>
+				                    <div class="controls-passos">
+				                        <div class="row">
+				                            <div class="col-xs-6 text-left">
+				                                <button ng-show="passo > 1" ng-click="passosCadastro(false, cadastro, 'cadastro_2');voltar=true" class="btn btn-primary fade-in"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Voltar</button>
+				                            </div>
+				                            <div class="col-xs-6 text-right">
+				                                <button ng-click="passosCadastro(true, cadastro, 'cadastro_2');voltar=false" class="fade-in btn btn-primary">Pr&oacute;ximo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </form>
+				            </div>
+				            <div ng-show="passo == 3" class="passo passo-3 fade-in">
+				                <form role="form" name="cadastro_3" novalidate>
+				                    <div class="form-group">
+				                        <input type="text" class="form-control" ng-model="cadastro.nome" placeholder="Seu nome" ng-required="!voltar">
+				                    </div>
+				                    <div class="form-group">
+				                        <input type="text" class="form-control" ng-model="cadastro.cpf" placeholder="Seu cpf" ng-required="!voltar" mask="999.999.999-99" mask-restrict="reject">
+				                    </div>
+				                    <div class="form-group">
+				                        <div class="input-group">
+				                            <input type="text" class="form-control" id="dtNascimento" maxlength="10" placeholder="Sua data de nascimento" aria-describedby="basic-addon2" ng-model="cadastro.dtNascimento" mask="99/99/9999" ng-required="!voltar" mask-restrict="reject">
+				                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+				                        </div>
+				                    </div>
+				                    <div class="controls-passos">
+				                        <div class="row">
+				                            <div class="col-xs-6 text-left">
+				                                <button ng-show="passo > 1" ng-click="passosCadastro(false, cadastro, 'cadastro_3');voltar=true" class="btn btn-primary fade-in"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Voltar</button>
+				                            </div>
+				                            <div class="col-xs-6 text-right">
+				                                <button ng-click="passosCadastro(true, cadastro, 'cadastro_3');voltar=false" class="fade-in btn btn-primary">Pr&oacute;ximo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </form>
+				            </div>
+				            <div ng-show="passo == 4" class="passo passo-4 fade-in">
+				                <form role="form" name="cadastro_4" novalidate>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-model="cadastro.cnpj" placeholder="Cnpj" mask="99.999.999/9999-99" mask-restrict="reject">
+				                        </div>
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-required="!voltar" ng-model="cadastro.telefone" placeholder="Telefone" mask="(99) 9999-9999?9" mask-restrict='reject'>
+				                        </div>
+				                    </div>
+				                    <div class="form-group">
+				                        <div class="input-group emailCampo">
+				                            <span class="input-group-addon" id="basic-addon3">www.</span>
+				                            <input id="siteUrl" type="text" class="form-control" aria-describedby="basic-addon3" ng-model="cadastro.dominioDesejado" ng-required="!voltar" placeholder="Qual dom&iacute;nio deseja utilizar?">
+				                            <i class="fa fa-exclamation-triangle" aria-hidden="true" ng-mouseover="colocarCorTooltip()" ng-show="siteInvalido" ng-hide="!siteInvalido" data-toggle="tooltip" data-placement="left" title="Deve conter .com, .br ou semelhantes"></i>
+				                        </div>
+				                    </div>
+				                    <hr>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6 cepCampo">
+				                            <input type="text" class="form-control" ng-required="!voltar" ng-model="cadastro.cep" placeholder="Cep" mask="99.999-999" mask-restrict='reject' ng-blur="buscaCep(cadastro.cep)">
+				                            <i class="fa {{loadingCepImage}}" ng-show="loadingCep"></i>
+				                        </div>
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <select class="form-control" ng-model="cadastro.estado" ng-options="estado.uf as estado.nome for estado in estados" ng-required="!voltar" ng-change="cidade(cadastro.estado)">
+				                                <option value="" disabled selected>Estado</option>
+				                            </select>
+				                        </div>
+				                    </div>
+				                    <div class="form-group">
+				                        <input type="text" class="form-control" ng-model="cadastro.endereco" placeholder="Endere&ccedil;o" ng-required="!voltar">
+				                    </div>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-model="cadastro.numero" placeholder="N&uacute;mero" ng-required="!voltar" mask="9999999999999999999999999999" mask-restrict='reject' mask-validate='false'>
+				                        </div>
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-model="cadastro.complemento" placeholder="Complemento">
+				                        </div>
+				                    </div>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-model="cadastro.bairro" placeholder="Bairro" ng-required="!voltar">
+				                        </div>
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-model="cadastro.cidade" placeholder="Cidade">
+				                        </div>
+				                    </div>
+				                    <hr>
+				                    <div class="row">
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <input type="text" class="form-control" ng-model="cadastro.codPromocional" placeholder="C&oacute;digo Promocional?">
+				                        </div>
+				                        <div class="form-group col-lg-6 col-xs-6">
+				                            <div class="checkbox">
+				                              <label ng-required="!cadastro.termos"><input type="checkbox" ng-required="!voltar" ng-model="cadastro.termos" value="aceito">Aceito os <a href="" class="green">termos de uso</a></label>
+				                            </div>
+				                        </div>
+				                    </div>
+				                    <div class="controls-passos">
+				                        <div class="row">
+				                            <div class="col-xs-6 text-left">
+				                                <button ng-show="passo > 1" ng-click="passosCadastro(false, cadastro, 'cadastro_4');voltar=true" class="btn btn-primary fade-in"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Voltar</button>
+				                            </div>
+				                            <div class="col-xs-6 text-right">
+				                                <button ng-click="passosCadastro(true, cadastro, 'cadastro_4');voltar=false" class="fade-in btn btn-primary">Pr&oacute;ximo <i class="fa {{loadingSend}}" aria-hidden="true"></i></button>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </form>
+				            </div>
+				        </div>
+				        <i class="fa fa-lock" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Informa&ccedil;&otilde;es seguras! Fique tranquilo :)"></i>
+				    </div>
+				    <!-- Mensagem de cadastrado com  sucesso -->
+	                <div ng-show="passo == 5" class="row padding-cadastro cadastro wow pulse" data-wow-duration="1500ms" data-wow-iteration="2">
+	                    <div class="col-lg-12">
+	                        <div class="box-cadastro fade-in">
+	                            <div class="passo passo-5 fade-in finalAgradecimento">
+                                    <i class="fa fa-check fade-in one" aria-hidden="true"></i>
+                                    <p class="fade-in two">Lorem ipsum!</p>
+                                </div>
+	                        </div>
+	                    </div>
+	                </div>
+                </div>
+		    </div>
+		</div>
+	</body>
+</html>
