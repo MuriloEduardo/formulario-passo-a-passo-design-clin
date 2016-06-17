@@ -295,7 +295,7 @@ a.green:hover{text-decoration: underline}
     border-color: transparent;
 }
 .btn-transparent{
-    background-color: rgba(25,138,78,.5);
+    background-color: rgba(51,122,183,.5);
     border-color: #333;
     color: #333;
 }
@@ -492,7 +492,7 @@ a.green:hover{text-decoration: underline}
     transition: all .35s ease-in-out;
 }
 .mac-mockup i:hover{
-    color: rgba(25,138,78,1);
+    color: rgba(51,122,183,1);
 }
 .mac-mockup .fa-angle-left{
     left: 5%;
@@ -583,8 +583,8 @@ a.green:hover{text-decoration: underline}
     border-bottom-right-radius: 4px;
 }
 footer{
-    background-color: rgba(25,138,78,.1);
-    border-top: solid thin rgba(25,138,78,.05);
+    background-color: rgba(51,122,183,.1);
+    border-top: solid thin rgba(51,122,183,.05);
 }
 .dropdown-menu{
     -webkit-transition: all .35s ease-in-out;
@@ -685,8 +685,8 @@ footer .list-group-item p:first-child{
     font-size: 12px;
     margin-top: 100px;
     padding: 20px 0;
-    background-color: rgba(25,138,78,.1);
-    border-top: solid thin rgba(25,138,78,.08);
+    background-color: rgba(51,122,183,.1);
+    border-top: solid thin rgba(51,122,183,.08);
 }
 a[aria-expanded="true"]{
     background-color: #FFF;
@@ -753,7 +753,7 @@ a[aria-expanded="true"] i {
 .top-nav-collapse .navbar-nav>li>a:focus{ color: #555 }
 .modal-dialog{ margin-left: auto;margin-right: auto;}
 .modal-body{
-    background-color: rgba(25,138,78,.1);
+    background-color: rgba(51,122,183,.1);
     padding: 40px 30px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -793,10 +793,10 @@ a[aria-expanded="true"] i {
     outline: none;
 }
 .form-control:focus {
-    border-color: rgba(25,138,78,.5);
+    border-color: rgba(51,122,183,.5);
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(25,138,78,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(25,138,78,.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(51,122,183,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(51,122,183,.6);
 }
 ::-moz-selection { background: #337ab7; color: #FFF;}
 ::selection { background: #337ab7; color: #FFF; }
@@ -1303,7 +1303,7 @@ a[aria-expanded="true"] i {
     border-right:none;
 }
 .precos-servicos-adicionais{
-    background-color: rgba(25,138,78,.1);
+    background-color: rgba(51,122,183,.1);
 }
 .precos-servicos-adicionais td:first-child{
     width: 30%;
@@ -1330,7 +1330,7 @@ a[aria-expanded="true"] i {
     cursor: default;
 }
 .table > tbody > tr:last-child{
-    border-bottom: solid 1px rgba(25,138,78,.05);
+    border-bottom: solid 1px rgba(51,122,183,.05);
 }
 .precos-servicos-adicionais>tbody>tr>td, 
 .precos-servicos-adicionais>tbody>tr>th, 
@@ -1338,7 +1338,7 @@ a[aria-expanded="true"] i {
 .precos-servicos-adicionais>tfoot>tr>th, 
 .precos-servicos-adicionais>thead>tr>td, 
 .precos-servicos-adicionais>thead>tr>th{
-    border-color: rgba(25,138,78,.05);
+    border-color: rgba(51,122,183,.05);
 }
 .saiba-mais-down{
     position: relative;
@@ -1502,7 +1502,7 @@ footer a:focus{
 .cada-loja:hover{
     border-color: #337ab7;
     color: #337ab7;
-    background-color: rgba(25,138,78,.05);
+    background-color: rgba(51,122,183,.05);
 }
 .cada-loja:hover .fa-shopping-cart{
     color: #337ab7;
@@ -1553,7 +1553,7 @@ footer a:focus{
     opacity: 0;
 }
 #design-precos .precos-servicos-adicionais tr:hover{
-    background-color: rgba(25,138,78,.1);
+    background-color: rgba(51,122,183,.1);
 }
 #design-precos .precos-servicos-adicionais tr:hover td a{
     opacity: 1;
@@ -1616,7 +1616,7 @@ form[name="cadastro_3"] input[type="radio"]{
     border-radius: 4px;
     top: 0px;
     left: 15px;
-    background-color: rgba(25,138,78,.9);
+    background-color: rgba(51,122,183,.9);
     opacity:0;
     -webkit-animation:fadeIn ease-in 1;
     -moz-animation:fadeIn ease-in 1;
